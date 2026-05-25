@@ -141,7 +141,9 @@ API: `http://localhost:8000`
 
 ## GitHub Pages
 
-This repository includes `.github/workflows/pages.yml`. On every push to `master` or `main`, GitHub Actions:
+The public GitHub Pages site can be served directly from the repository root. The committed `index.html`, `assets/`, and `static-data/` files are a read-only static build of the app.
+
+This repository also includes `.github/workflows/pages.yml` for optional manual deployments through GitHub Actions. When run manually, GitHub Actions:
 
 1. Installs the backend.
 2. Fetches current public CelesTrak Starlink GP and SATCAT data.
@@ -151,4 +153,4 @@ This repository includes `.github/workflows/pages.yml`. On every push to `master
 
 GitHub Pages cannot run FastAPI or SQLite, so the public Pages site is intentionally read-only. Search, filters, detail pages, timeline playback, reporting-period views, and exports work from the generated static data snapshot. Evidence editing and fresh ingestion still require running the app locally.
 
-After pushing, enable Pages in the repository settings with **Source: GitHub Actions** if it is not already enabled.
+If you switch Pages to **Source: GitHub Actions**, run the workflow manually from the Actions tab. Otherwise, keep Pages on the branch-root source and update the committed static files when you want to publish a refreshed snapshot.

@@ -1,0 +1,9 @@
+metric,value
+total_satellites,11927
+active_count,10355
+decayed_reentered_count,1566
+decayed_after_2024_11_05_count,957
+decayed_dec_2024_through_may_2025_count,477
+satellites_missing_decay_reason,1566
+satellites_with_inferred_category_only,11927
+last_data_refresh_time,2026-05-24T23:13:39
