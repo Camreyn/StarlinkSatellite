@@ -1,0 +1,4 @@
+norad_cat_id,object_name,starlink_name,international_designator,launch_date,decay_date,object_type,operational_status,generation_or_variant,launch_group,source_name,source_url,notes
+70001,STARLINK-SAMPLE-ACTIVE,STARLINK-SAMPLE-ACTIVE,2024-001A,2024-01-02,,PAYLOAD,ACTIVE,V2 Mini,Sample Group 1,Seed sample,sample_data/seed_satellites.csv,Synthetic active sample
+70002,STARLINK-SAMPLE-DECAYED,STARLINK-SAMPLE-DECAYED,2023-155A,2023-10-10,2024-12-08,PAYLOAD,DECAYED,V2 Mini,Sample Group 2,Seed sample catalog,sample_data/seed_satellites.csv,Synthetic post-election decay sample with no cause asserted
+70003,STARLINK-SAMPLE-V1-DECAYED,STARLINK-SAMPLE-V1-DECAYED,2020-025A,2020-04-22,2025-02-14,PAYLOAD,DECAYED,V1.0,Sample Older V1,Seed sample catalog,sample_data/seed_satellites.csv,Synthetic older V1 sample; retirement category is inference only

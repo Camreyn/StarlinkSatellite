@@ -1,0 +1,6 @@
+.git
+data/*.db
+backend/.pytest_cache
+backend/**/*.pyc
+frontend/node_modules
+frontend/dist

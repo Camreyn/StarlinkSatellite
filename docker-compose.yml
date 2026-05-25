@@ -1,0 +1,23 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      DATABASE_URL: sqlite:////app/data/starlink_lifecycle.db
+      CORS_ORIGINS: '["http://localhost:5173","http://localhost:8080"]'
+      SPACE_TRACK_USERNAME: ${SPACE_TRACK_USERNAME:-}
+      SPACE_TRACK_PASSWORD: ${SPACE_TRACK_PASSWORD:-}
+    volumes:
+      - ./data:/app/data
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    depends_on:
+      - api
+    ports:
+      - "8080:80"
